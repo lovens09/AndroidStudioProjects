@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/relativeLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:background="@drawable/animation_list"
+    >
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivTitle"
+        android:layout_marginTop="40dp"
+        android:id="@+id/etUserNam">
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivTitle"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:passwordToggleEnabled="true"
+        android:layout_below="@id/etUserNam"
+        android:layout_marginTop="5dp"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="20dp"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pass"
+        android:text="LogIn"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/ivTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/nav_logo_whiteout"
+        android:layout_marginTop="60dp"
+        android:gravity="center_horizontal"
+        />
+
+    <TextView
+        android:id="@+id/tvForgotCase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLogin"
+        android:layout_marginTop="3dp"
+        android:layout_centerHorizontal="true"
+        android:text="Forgot username or password?"
+        android:textColor="@color/colorInstaBackG" />
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Or"
+        android:layout_below="@id/tvForgotCase"
+        android:textColor="@color/colorInstaBackG"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btnFacebookLogin"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/or"
+        android:layout_marginHorizontal="40dp"
+        android:drawableLeft="@drawable/facebook_icon"
+        android:text="Login with Facebook account" />
+
+    <TextView
+        android:id="@+id/tvSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="No account yet? Sign up."
+        android:textColor="@color/colorInstaBackG"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

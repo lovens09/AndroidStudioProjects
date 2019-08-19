@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:id="@+id/ListTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Task to do : "
+        android:textStyle=""
+        android:textColor="#FF0000"
+        android:textSize="30dp"
+        android:shadowColor="#18450B"
+        />
+    <EditText
+        android:id="@+id/Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="29 Juillet"
+        android:layout_toRightOf="@+id/boutondate"
+        android:layout_below="@id/ListTitle"
+        android:layout_alignParentRight="true"
+        />
+
+    <Button
+        android:id="@+id/boutondate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:layout_below="@id/ListTitle"
+
+        />
+    <Button
+        android:id="@+id/menutask"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:text="task"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dip"
+        />
+    <Button
+        android:id="@+id/setting"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:text="setting"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:id="@+id/search"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:text="search"
+        android:layout_marginRight="5dip"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+
+        />
+
+
+    <TextView
+        android:id="@+id/Hint1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Hinht 1: Check one item to set it off"
+        android:layout_below="@id/boutondate"
+        android:layout_marginTop="25dip"
+        android:layout_marginLeft="5dip"
+        />
+    <TextView
+        android:id="@+id/Hint2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Hinht 1: Click the plus sign to add new todo items"
+        android:layout_below="@id/Hint1"
+        android:layout_marginTop="25dip"
+        android:layout_marginLeft="5dip"
+        />
+    <TextView
+        android:id="@+id/Hint3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Hinht 1: Long press on item to delete it."
+        android:layout_below="@id/Hint2"
+        android:layout_marginTop="25dip"
+        android:layout_marginLeft="5dip"
+        />
+</RelativeLayout>
